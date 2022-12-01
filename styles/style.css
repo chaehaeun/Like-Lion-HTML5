@@ -1,5 +1,8 @@
+@import url(./reset.css);
+
 body {
   background: #ffc;
+  font-weight: 500;
 }
 
 .header {
