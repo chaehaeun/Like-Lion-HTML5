@@ -51,10 +51,12 @@ body {
 
 .group1 {
   background-color: violet;
+  width: 180px;
 }
 
 .group2 {
   background-color: salmon;
+  width: 350px;
 }
 
 .group3 {
