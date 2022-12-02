@@ -44,17 +44,21 @@ body {
 .main {
   display: flex;
   background: #fff;
+  min-height: 450px;
   padding: 30px 30px;
   border-radius: 15px 15px 0 0;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .group1 {
   background-color: violet;
+  width: 250px;
 }
 
 .group2 {
   background-color: salmon;
+  width: 380px;
 }
 
 .group3 {
