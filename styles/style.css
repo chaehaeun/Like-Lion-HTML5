@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 
 /* 레이아웃 */
 *,
@@ -15,7 +16,7 @@ a {
 }
 
 body {
-  color: #181818;
+  color: #212121;
   background-color: #ccc;
   background-image: url(./images/bg_flower.png),
     linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
