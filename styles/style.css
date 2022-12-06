@@ -58,6 +58,7 @@ body {
   padding: 4px 0;
 }
 
+/* 마지막 li 요소의 a 오른쪽 패딩을 없앰 */
 .member li {
   display: inline-block;
 }
@@ -67,6 +68,10 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   display: inherit;
+}
+
+.member li:last-child a {
+  padding-right: 0;
 }
 
 .divider {
