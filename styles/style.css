@@ -2,11 +2,26 @@
 @import url(./reset.css);
 @import url(./fontello.css);
 
+/* 숨김 콘텐츠 */
+.sr-only,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0); /* for legacy browsers */
+  clip-path: inset(50%);
+}
+
 /* 레이아웃 */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
 }
 
 /* 링크 스타일 */
@@ -22,6 +37,7 @@ body {
     linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
   background-repeat: no-repeat, repeat;
   background-position: 50% 0, 0 0;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
@@ -42,7 +58,6 @@ body {
   background: #fff;
   padding: 0 30px 30px;
   border-radius: 0 0 15px 15px;
-  height: 150px;
 }
 
 /* 로고 */
@@ -56,6 +71,7 @@ body {
 .member {
   text-align: right;
   padding: 4px 0;
+  transform: translateX(10px);
 }
 
 /* 마지막 li 요소의 a 오른쪽 패딩을 없앰 */
@@ -68,10 +84,6 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   display: inherit;
-}
-
-.member li:last-child a {
-  padding-right: 0;
 }
 
 .divider {
