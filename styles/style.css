@@ -35,7 +35,7 @@ body {
   background-color: #ccc;
   background-image: url(./images/bg_flower.png),
     linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
-  background-repeat: no-repeat, repeat;
+  background-repeat: no-repeat;
   background-position: 50% 0, 0 0;
   font-size: 1.4rem;
   font-weight: 500;
@@ -56,7 +56,7 @@ body {
 .header {
   position: relative;
   background: #fff;
-  padding: 0 30px 30px;
+  padding: 0 30px;
   border-radius: 0 0 15px 15px;
 }
 
@@ -92,7 +92,92 @@ body {
 
 /* 비주얼 */
 .visual {
-  height: 10vh;
+  height: 120px;
+  position: relative;
+}
+
+/* 메인 메뉴 */
+.navigation {
+  padding-bottom: 40px;
+}
+
+.menu {
+  /* display: flow-root; */
+  background: #e85e2c
+    linear-gradient(
+      to bottom,
+      #1e5799 0%,
+      #ef9126 0%,
+      #e85e2c 35%,
+      #e85e2c 70%,
+      #ef9126 100%
+    );
+  border-top: 2px solid currentColor;
+  height: 47px;
+  border-radius: 0 0 5px 5px;
+  padding-left: 232px;
+}
+
+.menu-item {
+  float: left;
+  position: relative;
+  border-left: 2px solid #fff;
+}
+
+.menu-button {
+  background: transparent;
+  line-height: 45px;
+  padding: 0 21px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+}
+
+.is-active .menu-button {
+  color: #ff0;
+}
+
+.is-active .menu-button::after {
+  content: "";
+  background: #000;
+  display: block;
+  height: 2px;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 47px;
+  padding: 4px 0;
+}
+
+.is-active .sub-menu {
+  display: block;
+  white-space: nowrap;
+}
+
+.sub-menu li,
+.sub-menu a {
+  display: inline-block;
+  margin-right: 0.2em;
+}
+
+.sub-menu a {
+  padding: 6px 8px;
+}
+
+.sub-menu a::before {
+  content: "\e805";
+  font-family: "fontello";
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* 메인 */
@@ -105,13 +190,99 @@ body {
 }
 
 .group1 {
-  background-color: violet;
-  width: 180px;
+  width: 250px;
+}
+
+.login {
+  background: #ed552f radial-gradient(circle at right top, #e8852e, #ed552f);
+  box-shadow: 5px 5px 0 0 #aaa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.login-title {
+  color: #ff0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-indent: 10px;
+}
+
+.login-form {
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form,
+.sign {
+  background: #fff;
+}
+
+.login-form fieldset {
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 4px;
+}
+
+.login-form div {
+  margin-bottom: 6px;
+}
+
+.login-form label {
+  display: inline-block;
+  width: 4em;
+}
+
+.login-form div {
+  margin-bottom: 6px;
+}
+
+.login-form input {
+  width: 90px;
+  height: 22px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  padding: 2px 2px 2px 6px;
+}
+
+.login-form input:focus {
+  outline: 1px solid #959595;
+}
+
+.login-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  background: #ed552f;
+  border-radius: 2px;
+  border: 0;
+}
+
+.sign {
+  border-radius: 0 0 5px 5px;
+  padding: 4px 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.sign a {
+  padding: 4px 0;
+}
+
+.sign .icon-right-open {
+  color: #e85e2c;
 }
 
 .group2 {
   background-color: salmon;
-  width: 350px;
+  width: 380px;
 }
 
 .group3 {
@@ -126,7 +297,7 @@ body {
 /* 슬로건 */
 .slogan {
   background: skyblue;
-  height: 10vh;
+  /* height: 10vh; */
 }
 
 /* 푸터 */
@@ -135,5 +306,5 @@ body {
 }
 .footer-inner {
   background-color: silver;
-  height: 15vh;
+  /* height: 15vh; */
 }
