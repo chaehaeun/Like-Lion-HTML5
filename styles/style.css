@@ -387,6 +387,58 @@ body {
   color: #f00;
 }
 
+.term {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.term-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.term-list {
+  margin-top: 15px;
+}
+
+.term-list-subject {
+  color: #296897;
+  font-weight: 500;
+}
+
+.term-list > div {
+  display: flow-root;
+  margin-top: 10px;
+}
+
+.term-list-subject,
+.term-list-brief {
+  float: right;
+  width: 145px;
+}
+
+.term-list-thumbnail {
+  float: left;
+}
+
+.term-list-brief {
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+.cross .term-list-thumbnail {
+  float: right;
+}
+
+.cross .term-list-subject,
+.cross .term-list-brief {
+  float: left;
+}
+
+/* 그룹2 */
 .group2 {
   background-color: salmon;
   width: 380px;
