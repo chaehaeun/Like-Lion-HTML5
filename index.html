@@ -189,26 +189,29 @@
             >
           </div>
         </section>
-        <ul class="validation-list">
-          <li>
-            <a
-              href="https://validator.w3.org/"
-              target="_blank"
-              title="마크업 유효성 검사 사이트로 이동"
-              rel="noopener noreferrer"
-              >W3C Markup Validation</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://jigsaw.w3.org/css-validator/"
-              target="_blank"
-              title="CSS 유효성 검사 사이트로 이동"
-              rel="noopener noreferrer"
-              >CSS Validation Service</a
-            >
-          </li>
-        </ul>
+        <section>
+          <h2 class="a11y-hidden">유효성 검사 배너</h2>
+          <ul class="validation-list">
+            <li>
+              <a
+                href="https://validator.w3.org/"
+                target="_blank"
+                title="마크업 유효성 검사 사이트로 이동"
+                rel="noopener noreferrer"
+                >W3C Markup Validation</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://jigsaw.w3.org/css-validator/"
+                target="_blank"
+                title="CSS 유효성 검사 사이트로 이동"
+                rel="noopener noreferrer"
+                >CSS Validation Service</a
+              >
+            </li>
+          </ul>
+        </section>
 
         <section class="term">
           <h2 class="term-title">웹 관련 용어</h2>
@@ -236,10 +239,43 @@
           </dl>
         </section>
       </div>
-      <div class="group group2">그룹2</div>
+      <div class="group group2">
+        <h2 class="a11y-hidden">검색</h2>
+        <form
+          method="POST"
+          action="https://formspree.io/seulbinim@gmail.com"
+          class="search-form"
+        >
+          <fieldset>
+            <legend>검색 폼</legend>
+            <div class="search-form-inner">
+              <div class="form-group">
+                <label for="search" class="form-group-label"
+                  ><span class="icon-search" aria-hidden="true"></span
+                  >자료검색</label
+                >
+                <input
+                  type="search"
+                  id="search"
+                  class="form-group-input"
+                  required
+                  placeholder="검색어를 입력하세요. 예)HTML5"
+                />
+              </div>
+              <button type="submit" class="search-button button-fill button">
+                검색
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
       <div class="group group3">그룹3</div>
     </main>
-    <article class="slogan">슬로건</article>
+    <article class="slogan">
+      <div class="tmp1"></div>
+      <div class="tmp2"></div>
+      <div class="tmp3"></div>
+    </article>
     <footer class="footer">
       <div class="footer-inner">푸터</div>
     </footer>
