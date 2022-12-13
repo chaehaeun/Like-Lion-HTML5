@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="./js/main.js" defer></script>
+    <script src="./js/menu-tab-me.js" defer></script>
+    r
+    <!-- <script src="./js/menu-tab.js"></script> -->
   </head>
   <body>
     <header class="header">
@@ -268,8 +271,207 @@
             </div>
           </fieldset>
         </form>
+        <div class="board">
+          <div class="tab-list" role="tablist ">
+            <button
+              type="button"
+              class="tab is-selected"
+              role="tab"
+              id="noticeButton"
+              aria-controls="notice"
+              aria-selected="true"
+            >
+              공지사항
+            </button>
+            <button
+              type="button"
+              class="tab"
+              role="tab"
+              id="archiveButton"
+              aria-controls="archive"
+              aria-selected="false"
+            >
+              자료실
+            </button>
+          </div>
+          <div
+            class="notice tab-panel is-selected"
+            role="tabpanel"
+            id="notice"
+            aria-labelledby="noticeButton"
+          >
+            <ul class="board-list">
+              <li>
+                <a class="icon-stop" href="/"
+                  >HTML의 모든 것을 알려주마 샘플 활용법</a
+                >
+                <time datetime="2022-12-21T13:53:45">2022.09.02</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">W3C 사이트 리뉴얼 및 공지사항</a>
+                <time datetime="2022-12-21T13:53:45">2022.09.02</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">KWCAG 2.1 소식</a>
+                <time datetime="2022-12-21T13:53:45">2022.09.02</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/"
+                  >서버 점검으로 인한 사이트 이용안내 입니다.</a
+                >
+                <time datetime="2022-12-21T13:53:45">2022.09.02</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/"
+                  >여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어
+                  봅시다.</a
+                >
+                <time datetime="2022-12-21T13:53:45">2022.09.02</time>
+              </li>
+            </ul>
+            <a
+              href="/"
+              class="btn-more board-more icon-plus"
+              aria-labelledby="noticeButton"
+              >더보기</a
+            >
+          </div>
+          <div
+            class="archive tab-panel"
+            role="tabpanel"
+            id="archive"
+            aria-labelledby="archiveButton"
+          >
+            <ul class="board-list">
+              <li>
+                <a class="icon-stop" href="/">디자인 사이트 링크 모음</a>
+                <time datetime="2022-12-21T13:53:45">2022.09.02</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">웹 접근성 관련 자료 모음</a>
+                <time datetime="2022-12-21T13:53:45">2022.09.02</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">예제 샘플 응용해보기</a>
+                <time datetime="2022-12-21T13:53:45">2022.09.02</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/"
+                  >웹 접근성 향상을위한 국가 표준 기술 가이드라인</a
+                >
+                <time datetime="2022-12-21T13:53:45">2022.09.02</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/"
+                  >여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어
+                  봅시다.</a
+                >
+                <time datetime="2022-12-21T13:53:45">2022.09.02</time>
+              </li>
+            </ul>
+            <a
+              href="/"
+              class="btn-more board-more icon-plus"
+              aria-labelledby="archiveButton"
+              >더보기</a
+            >
+          </div>
+        </div>
+        <section class="news">
+          <h2 class="news-title">새소식</h2>
+          <a href="/" class="news-link">
+            <article class="news-item">
+              <h3 class="news-item-title">W3C 사이트가 리뉴얼 되었습니다.</h3>
+              <time class="news-item-date" datetime="2022-12-13T09:30:23"
+                >2022.12.13</time
+              >
+              <p class="news-item-brief">
+                디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 기존보다
+                최신 정보 및 개발자를 위한 기술 가이드도 찾기 쉽도록 구성되어
+                있습니다.
+              </p>
+              <figure class="news-item-thumbnail">
+                <img
+                  src="assets/news.gif"
+                  alt="W3C 사이트가 HTML5 발표 후 새롭게 리뉴얼 된 모습"
+                />
+                <figcaption>W3C 리뉴얼</figcaption>
+              </figure>
+            </article>
+          </a>
+          <a href="/" class="icon-plus news-more btn-more" title="새소식"
+            >더보기</a
+          >
+        </section>
       </div>
-      <div class="group group3">그룹3</div>
+      <div class="group group3">
+        <div class="gradient-effect">
+          <section class="event">
+            <h2 class="event-title">
+              신규 <span class="accent-color">이벤트</span>
+            </h2>
+            <div class="event-button-wrapper">
+              <button type="button" class="event-button event-button-prev">
+                이전 이벤트 보기
+              </button>
+              <button type="button" class="event-button event-button-next">
+                다음 이벤트 보기
+              </button>
+            </div>
+            <div id="eventDetail">
+              <p class="event-thumbnail">
+                <img
+                  src="./assets/free_gift.gif"
+                  alt="이벤트 경품 : 웹표준 핵심 가이드북 2(HTML5+CSS3) 증정"
+                />
+              </p>
+              <p class="event-brief">
+                <em>웹표준 핵심 가이드북 2 출시!</em> 선착순 500명 한정으로
+                증정.
+              </p>
+            </div>
+          </section>
+          <section class="related">
+            <h2 class="related-title">
+              관련 <span class="accent-color">사이트</span>
+            </h2>
+            <ul class="related-list" tabindex="0">
+              <li><a href="/">제로베이스</a></li>
+              <li><a href="/">MDN</a></li>
+              <li><a href="/">웹접근성 연구소</a></li>
+              <li><a href="/">Web Standards</a></li>
+              <li><a href="/">W3C</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="gradient-effect margin-top-default">
+          <section class="favorite">
+            <h2 class="favorite-title">
+              인기 <span class="accent-color">사이트</span>
+            </h2>
+            <ol class="favorite-list">
+              <li class="no1">
+                <a href="/">W3C</a><em class="up" aria-label="순위 상승"></em>
+              </li>
+              <li class="no2">
+                <a href="/">Web Standards</a
+                ><em class="down" aria-label="순위 하락"></em>
+              </li>
+              <li class="no3">
+                <a href="/">MDN</a
+                ><em class="stop" aria-label="순위 변동없음"></em>
+              </li>
+              <li class="no4">
+                <a href="/">CSS ZenGarden</a
+                ><em class="up" aria-label="순위 상승"></em>
+              </li>
+            </ol>
+            <a href="/" class="more favorite-more icon-plus" title="인기 사이트"
+              >더보기</a
+            >
+          </section>
+        </div>
+      </div>
     </main>
     <article class="slogan">
       <div class="tmp1"></div>
