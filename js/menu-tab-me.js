@@ -1,8 +1,3 @@
-// id noticeButton 을 누르면, is-selected 클래스 추가,
-// 만약 이미 있다면 클래스 제거
-
-// id noticeButton의 클래스가 active라면
-
 const menuItems = document.querySelector(".tab-list");
 
 const tabHandler = (e) => {

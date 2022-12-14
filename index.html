@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="./js/main.js" defer></script>
     <script src="./js/menu-tab-me.js" defer></script>
-    r
     <!-- <script src="./js/menu-tab.js"></script> -->
   </head>
   <body>
@@ -451,22 +450,30 @@
             </h2>
             <ol class="favorite-list">
               <li class="no1">
-                <a href="/">W3C</a><em class="up" aria-label="순위 상승"></em>
+                <a href="/">W3C</a
+                ><em class="up"><span class="a11y-hidden">순위 상승</span></em>
               </li>
               <li class="no2">
                 <a href="/">Web Standards</a
-                ><em class="down" aria-label="순위 하락"></em>
+                ><em class="down"
+                  ><span class="a11y-hidden">순위 하락</span></em
+                >
               </li>
               <li class="no3">
                 <a href="/">MDN</a
-                ><em class="stop" aria-label="순위 변동없음"></em>
+                ><em class="stop"
+                  ><span class="a11y-hidden">순위 변공 없음</span></em
+                >
               </li>
               <li class="no4">
                 <a href="/">CSS ZenGarden</a
-                ><em class="up" aria-label="순위 상승"></em>
+                ><em class="up"><span class="a11y-hidden">순위 상승</span></em>
               </li>
             </ol>
-            <a href="/" class="more favorite-more icon-plus" title="인기 사이트"
+            <a
+              href="/"
+              class="btn-more favorite-more icon-plus"
+              title="인기 사이트"
               >더보기</a
             >
           </section>
@@ -474,12 +481,57 @@
       </div>
     </main>
     <article class="slogan">
-      <div class="tmp1"></div>
-      <div class="tmp2"></div>
-      <div class="tmp3"></div>
+      <h2 class="slogan-title" title="웹카페에서 웹표준을">슬로건</h2>
+      <p class="slogan-content">
+        <q cite="http://w3.org/WAI"
+          >The power of the Web is in its universality, Access by everyone
+          regardless of disability is an essential aspect.</q
+        >
+        Tim Berners - Lee , W3C Director and inventor of the World Wide Web
+      </p>
+      <footer class="a11y-hidden">출처 : W3C, http://w3.org/WAI/</footer>
     </article>
     <footer class="footer">
-      <div class="footer-inner">푸터</div>
+      <div class="footer-inner">
+        <a href="/" class="footer-logo">
+          <img src="assets/footer_logo.png" alt="web cafe" />
+        </a>
+        <div class="footer-inner-wrapper">
+          <ul class="guide-list">
+            <li><a href="/">회사 소개</a></li>
+            <li><a href="/">개인정보 보호정책</a></li>
+            <li><a href="/">이메일주소 무단수집 거부</a></li>
+            <li><a href="/">contact us</a></li>
+            <li><a href="/">site map</a></li>
+          </ul>
+          <address class="address">
+            <span>서울시 강남구 역삼동 718-5</span>
+            <span>전화 : <a href="tel:0212345678">02-1234-5678</a></span>
+            <span
+              >email :
+              <a href="mailto:seulbinim@gmail.com?subject=문의사항"
+                >seulbinim@gmail.com</a
+              ></span
+            >
+          </address>
+          <small class="copyright">
+            Copyright since &copy; 2010 by Web Cafe CORPORATION ALL RIGHTS
+            RESERVED.
+          </small>
+        </div>
+        <div class="badge-wrapper">
+          <img
+            class="badge-html"
+            src="assets/html5_logo.png"
+            alt="최신 표준인 HTML5를 사용하여 마크업 했습니다."
+          />
+          <img
+            class="badge-css"
+            src="assets/css3_logo.png"
+            alt="최신 기술인 CSS3를 활용하여 디자인 했습니다."
+          />
+        </div>
+      </div>
     </footer>
   </body>
 </html>
